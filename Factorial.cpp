@@ -10,6 +10,11 @@ int main()
     cout<<"Enter a number to find its factorial: ";
     cin>>n;
 
+    if(n < 0)
+    {
+        cout<<"Factorial of negative number not posssible!\n";
+        return 1;
+    }
     cout<<"Factorial of "<<n<<" : "<<factorial(n)<<" \n";
 
     return 0;
